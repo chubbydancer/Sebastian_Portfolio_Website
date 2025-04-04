@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other</title>
+
+    <!-- Link to Google Fonts (Josefin Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Link to Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-light bg-white text-[#2A2A2A]">
+
+    <!-- Sticky Header Section -->
+    <header class="sticky top-0 z-50 bg-white py-5 uppercase tracking-wider shadow-none">
+        <div class="flex justify-between items-center px-10">
+            <div class="text-3xl font-regular">
+                <a href="index.html" class="no-underline text-black hover:text-gray-500 tracking-[6px]">SEBASTIAN FERNER</a>
+            </div>
+
+            <nav class="text-lg flex gap-6">
+                <a href="intaglio.html" class="text-black no-underline hover:text-gray-500 font-thin">Intaglio</a>
+                <a href="other.html" class="text-black no-underline hover:text-gray-500 font-thin">Other</a>
+                <a href="bio.html" class="text-black no-underline hover:text-gray-500 font-light">Bio</a>
+                <a href="contact.html" class="text-black no-underline hover:text-gray-500 font-thin">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="py-10">
+        <div class="container mx-auto px-4">
+            <!-- Image Grid: 3 images per row, responsive, centered -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+
+                <!-- Image 1 -->
+                <div class="relative group">
+                    <img src="https://github.com/chubbydancer/Sebastian_Portfolio_Website/raw/main/En%20s%C3%A4rskild%20natt.png" alt="Artwork" class="w-full h-auto cursor-pointer transition-all duration-300 transform group-hover:opacity-50"/>
+                    <!-- Hover Box and Text -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-gray-300 bg-opacity-50 group-hover:opacity-100 opacity-0 transition-opacity duration-300">
+                        <p class="text-center text-black p-4 bg-white bg-opacity-75">Drypoint and mixed technique, 16x12.5, 2024</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="relative group">
+                    <img src="https://github.com/chubbydancer/Sebastian_Portfolio_Website/raw/main/En%20s%C3%A4rskild%20natt.png" alt="Artwork" class="w-full h-auto cursor-pointer transition-all duration-300 transform group-hover:opacity-50"/>
+                    <!-- Hover Box and Text -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-gray-300 bg-opacity-50 group-hover:opacity-100 opacity-0 transition-opacity duration-300">
+                        <p class="text-center text-black p-4 bg-white bg-opacity-75">Drypoint and mixed technique, 16x12.5, 2024</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="relative group">
+                    <img src="https://github.com/chubbydancer/Sebastian_Portfolio_Website/raw/main/En%20s%C3%A4rskild%20natt.png" alt="Artwork" class="w-full h-auto cursor-pointer transition-all duration-300 transform group-hover:opacity-50"/>
+                    <!-- Hover Box and Text -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-gray-300 bg-opacity-50 group-hover:opacity-100 opacity-0 transition-opacity duration-300">
+                        <p class="text-center text-black p-4 bg-white bg-opacity-75">Drypoint and mixed technique, 16x12.5, 2024</p>
+                    </div>
+                </div>
+
+                <!-- More images can be added here following the same structure -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4">
+        <a href="https://www.instagram.com/ateljsebastianferner/" target="_blank" class="text-black no-underline hover:text-gray-500">
+            Instagram
+        </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Index</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background-color: #FFFFFF; /* Set the background to pure white */
+      color: #3E3B3A;
+    }
+  </style>
+</head>
+<body class="font-light">
+
+  <!-- Sticky Header without shadow -->
+  <header class="sticky top-0 z-50 bg-white py-5 uppercase tracking-wider">
+    <div class="flex justify-between items-center px-10">
+      <div class="text-3xl font-regular">
+        <a href="index.html" class="no-underline hover:text-gray-500 tracking-[6px]">SEBASTIAN FERNER</a>
+      </div>
+
+      <nav class="text-lg flex gap-6">
+        <a href="intaglio.html" class="no-underline hover:text-gray-500 font-thin">Intaglio</a>
+        <a href="other.html" class="no-underline hover:text-gray-500 font-thin">Other</a>
+        <a href="bio.html" class="no-underline hover:text-gray-500 font-light">Bio</a>
+        <a href="contact.html" class="no-underline hover:text-gray-500 font-thin">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="text-center py-10">
+    <!-- Image that opens in modal when clicked -->
+    <div class="flex justify-center mb-2">
+      <img src="https://github.com/chubbydancer/Sebastian_Portfolio_Website/raw/main/logical%20end%20variation.JPG" alt="Artwork" class="w-[877px] h-[696px] object-contain cursor-pointer" onclick="document.getElementById('imageModal').classList.remove('hidden')" />
+    </div>
+
+    <p class="text-sm mt-2">Drypoint and mixed technique, 16x12.5, 2024</p>
+  </main>
+
+  <!-- Modal for Image Enlargement -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+    <div class="relative">
+      <!-- Enlarged Image -->
+      <img src="https://github.com/chubbydancer/Sebastian_Portfolio_Website/raw/main/logical%20end%20variation.JPG" alt="Enlarged Artwork" class="w-[1400px] h-[1050px] object-contain" />
+
+      <!-- Close Button -->
+      <button class="absolute top-4 right-4 text-white text-3xl" onclick="document.getElementById('imageModal').classList.add('hidden')">&times;</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <a href="https://www.instagram.com/ateljesebastianferner" target="_blank" class="no-underline hover:text-gray-500">
+      Instagram
+    </a>
+  </footer>
+
+</body>
+</html>
